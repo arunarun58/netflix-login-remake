@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(233, 14, 14);
+    margin-top: 20px;
+    height: 80vh;
+    width: 45vh;
+    margin: auto;
+}
+
+.main {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+    animation: 1s ease-in-out 0s 1 slideInLeft;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 62px;
+    color: #E50914;
+    text-align: center;
+    padding-top: 30%;
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(90);
+    }
+}
+
+input {
+    display: flex;
+    margin: 0 auto;
+    height: 40px;
+    width: 90%;
+    background-color: #444444;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+button {
+    margin: 0 auto;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover {
+    background-color: rgb(220, 0, 0);
+    transition: 0.5s;
+}
+
+.sign-in {
+    margin-top: 15px;
+    width: 80%;
+    height: 45px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+    outline: none;
+}
+
+p {
+    padding-top: 30%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sign-up {
+    margin-top: 10px;
+    width: 90%;
+    height: 45px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+    outline: none;
+}
+
+a {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgb(134, 129, 129);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
